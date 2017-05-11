@@ -1,4 +1,4 @@
-TITULO = "MI_TRANS_PASSARO_MIOLO"
+TITULO = "MI_TRANS_PASSAROS_MIOLO"
 GIT = `git log -1 --date=short --format=format:'%h'`
 
 all:
@@ -7,7 +7,7 @@ all:
 rename:
 	cp LIVRO.pdf $(TITULO)_MIOLO_$(GIT).pdf
 clean_arquivosgerais:
-	mv ~/Dropbox/ARQUIVOS_GERAIS/$(TITULO)_MIOLO_* ~/Dropbox/ARQUIVOS_GERAIS/OLD/
+	mv ~/Dropbox/ARQUIVOS_GERAIS/$(TITULO)*.pdf ~/Dropbox/ARQUIVOS_GERAIS/OLD/
 delivery:
 	cp $(TITULO)_MIOLO_$(GIT).pdf ~/Dropbox/ARQUIVOS_GERAIS/
 	echo $(GIT) '--- Entregue em' "$$(date)" >> ENTREGAS.txt
