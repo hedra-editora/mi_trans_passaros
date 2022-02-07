@@ -1,8 +1,43 @@
+% Este documento tem a ver com as partes do LIVRO. 
+
+\input{1-fronte}       % [Frontistício]
+\input{2-creditos}     % [Créditos]
+\input{3-rosto}	       % [folha de rosto]
+% nothing			is level -3
+% \book				is level -2
+% \part				is level -1
+% \chapter 			is level 0
+% \section 			is level 1
+% \subsection 		is level 2
+% \subsubsection 	is level 3
+% \paragraph 		is level 4
+% \subparagraph 	is level 5
+\setcounter{secnumdepth}{-2}
+\setcounter{tocdepth}{0}
+
+% \renewcommand{\contentsname}{Índex} 	% Trocar nome do sumário para 'Índex'
+%\ifodd\thepage\relax\else\blankpage\fi 	% Verifica se página é par e coloca página branca
+%\tableofcontents*
+
+\pagebreak
+\begingroup \footnotesize \parindent0pt \parskip 5pt \thispagestyle{empty} \vspace*{-0.5\textheight}\mbox{} \vfill
+\baselineskip=.92\baselineskip
+\input{PRETAS.tex}
+\endgroup
+
+\pagebreak\thispagestyle{empty}\movetooddpage
+{\begingroup\mbox{}\pagestyle{empty}
+\pagestyle{empty} 
+% \renewcommand{\contentsname}{Índex} 	% Trocar nome do sumário para 'Índex'
+%\ifodd\thepage\relax\else\blankpage\fi 	% Verifica se página é par e coloca página branca
+\addtocontents{toc}{\protect\thispagestyle{empty}}
+\tableofcontents*\clearpage\endgroup}
+
 \input{NOTA}
 \input{COMOFOIFEITOESTELIVRO721.tex}
 \input{LINGUISTICA}
 
-\part{\titulo}
+\part{O surgimento dos pássaros}
 
 \input{OSURGIMENTODOSPASSAROS631.tex}
 \input{NARORIWEMUCURA606.tex}
@@ -22,25 +57,7 @@
 \input{KASIMI613.tex}
 \input{OPASSAROSIIKEKEATA652.tex}
 \input{SIIKEKEATAWE614.tex}
-%\input{MONSTROKEYAKEYA651.tex}
-%\input{KEYAKEYA615.tex}
-%\input{AARVOREDOSCANTOS650.tex}
-%\input{AMOAHIAHEREHAANOWEHEI616.tex}
-%\input{OSURGIMENTODASCOBRAS649.tex}
-%\input{TEPEREORUPRARIONOWEI618.tex}
-%\input{AONCAEACENTOPEIA648.tex}
-%\input{RAXOWAPORORITAWEXOKHEHAAP620.tex}
-%\input{AONCAEOTATU647.tex}
-%\input{RAXOOPOXOKHEHAAP622.tex}
-%\input{AMULTIPLICACAODASONCAS646.tex}
-%\input{RAPEREPARAROYONOWEI623.tex}
-%\input{MINHOCAO645.tex}
-%\input{HOREMARIWE624.tex}
-%\input{OPASSAROPOPOMARI644.tex}
-%\input{POPOMARITAWE625.tex}
-%\input{OSURGIMENTODAFLECHA643.tex}
-%\input{XEREKAAREKUPRARIONOWEI626.tex}
-%\input{ANTESDOSURGIMENTODOTERCADO642.tex}
-%\input{SIPARAAREKUPRARIONOWEI627.tex}
-%\input{OCORTEDOSCABELOS641.tex}
-%\input{TEPEHEMAKASIPEYOMOUREHAPAMONOWEI629.tex}
+
+
+\input{Y-publicidade}	   % [lista de livros publicados]
+\input{Z-colofon}		   % [colofon]
