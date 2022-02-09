@@ -55,8 +55,12 @@
 % Fontes
 \newfontfamily\formular{Formular}
 \newfontfamily\formularlight{Formular Light}
-\setmainfont[Ligatures=TeX,Numbers=OldStyle]{Linux Libertine O}
-
+%\setmainfont[Ligatures=TeX,Numbers=OldStyle]{Linux Libertine O}
+%\setmainfont[Ligatures=TeX,Numbers=OldStyle]{EBGaramond12-Regular}
+\setmainfont[Numbers={Proportional,OldStyle}]{EBGaramond12-Regular.otf}[
+ItalicFont = EBGaramond12-Italic.otf,
+BoldFont = EBGaramond-Bold.ttf]
+%BoldItalicFont = FreightTextProBold-Italic.ttf]
 
 % Estilos
 \makeoddhead{baruch}{}{\scshape\MakeLowercase{\scshape\MakeTextLowercase{}}}{}
@@ -68,13 +72,10 @@
 
 % Testes
 
-
 \begin{document}
-
 
 %\input{MUSSUMIPSUM}  		% Teste da classe
 \include{INPUTS}
-
 
 \checkandfixthelayout
 \end{document}
