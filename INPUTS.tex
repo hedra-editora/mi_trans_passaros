@@ -31,7 +31,7 @@
 % \renewcommand{\contentsname}{Índex} 	% Trocar nome do sumário para 'Índex'
 %\ifodd\thepage\relax\else\blankpage\fi 	% Verifica se página é par e coloca página branca
 \addtocontents{toc}{\protect\thispagestyle{empty}}
-\tableofcontents*\clearpage\endgroup}
+\enlargethispage{1\baselineskip}\tableofcontents*\clearpage\endgroup}
 
 \input{NOTA}
 \input{FEITO}
